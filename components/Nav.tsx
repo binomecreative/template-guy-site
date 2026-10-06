@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { ChevronDown, Heart, FileSpreadsheet, Globe, Sparkles, Menu, X } from 'lucide-react'
+import { ChevronDown, Heart, FileSpreadsheet, Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 type SubItem = {
@@ -28,22 +28,6 @@ const SUB_PRODUCTS: SubItem[] = [
     href: '/templates-excel',
     Icon: FileSpreadsheet,
     desc: 'Planeador de boda, presupuesto, invitados',
-    tag: 'Pronto',
-    tagColor: 'bg-amber-100 text-amber-800',
-  },
-  {
-    label: 'Mini-sitios editoriales',
-    href: '/portafolio',
-    Icon: Globe,
-    desc: 'Portafolios, Linktrees, one-pagers',
-    tag: 'Pronto',
-    tagColor: 'bg-amber-100 text-amber-800',
-  },
-  {
-    label: 'Brand kits',
-    href: '/portafolio',
-    Icon: Sparkles,
-    desc: 'Logo + paleta + mockups + guía',
     tag: 'Pronto',
     tagColor: 'bg-amber-100 text-amber-800',
   },
@@ -102,8 +86,8 @@ export default function Nav() {
             {/* Megamenu */}
             {desktopOpen && (
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2">
-                <div className="w-[640px] bg-white rounded-2xl shadow-[0_30px_80px_-20px_rgba(0,0,0,0.2)] border border-black/5 p-3">
-                  <div className="grid grid-cols-2 gap-1">
+                <div className="w-[340px] bg-white rounded-2xl shadow-[0_30px_80px_-20px_rgba(0,0,0,0.2)] border border-black/5 p-3">
+                  <div className="grid grid-cols-1 gap-1">
                     {SUB_PRODUCTS.map((s) => (
                       <Link
                         key={s.label}

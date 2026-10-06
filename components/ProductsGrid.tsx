@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowUpRight, Heart, FileSpreadsheet, Globe, Sparkles } from 'lucide-react'
+import { ArrowUpRight, Heart, FileSpreadsheet } from 'lucide-react'
 
 const PRODUCTS = [
   {
@@ -27,30 +27,6 @@ const PRODUCTS = [
     live: false,
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80',
   },
-  {
-    key: 'mini-sitios',
-    name: 'Mini-sitios editoriales',
-    tag: 'Muy pronto',
-    tagColor: 'bg-amber-100 text-amber-800',
-    icon: Globe,
-    desc: 'One-pagers premium para fotógrafos, freelancers y pequeños negocios. Portafolio y Linktree editorial.',
-    priceFrom: 'Desde $490 MXN',
-    href: '/portafolio',
-    live: false,
-    image: 'https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    key: 'brand-kits',
-    name: 'Brand kits',
-    tag: 'Muy pronto',
-    tagColor: 'bg-amber-100 text-amber-800',
-    icon: Sparkles,
-    desc: 'Logo + paleta + mockups + guía básica para arrancar un negocio con identidad clara.',
-    priceFrom: 'Desde $990 MXN',
-    href: '/portafolio',
-    live: false,
-    image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=800&q=80',
-  },
 ]
 
 export default function ProductsGrid() {
@@ -72,8 +48,8 @@ export default function ProductsGrid() {
             Productos digitales <span className="italic">con cuidado del detalle.</span>
           </h2>
           <p className="mt-6 text-base text-neutral-600 leading-relaxed">
-            Cuatro líneas de producto. Una sola obsesión: que lo digital se sienta tan editorial
-            como el papel bueno.
+            Productos listos para parejas, familias y pequeños negocios. Una obsesión: que lo
+            digital se sienta tan editorial como el papel bueno.
           </p>
         </div>
 
