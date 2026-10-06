@@ -7,35 +7,43 @@ import { cn } from '@/lib/utils'
 const FAQ = [
   {
     q: '¿Qué incluye exactamente?',
-    a: 'Una invitación digital completa, con URL propia, hasta 10 secciones personalizables (hero, countdown, itinerario, RSVP, dress code, regalos, galería, música, mensaje, historia de amor), libro de firmas, galería colaborativa y mesa de invitados con QR. Tu invitación vive online para siempre.',
+    a: 'Una invitación digital completa, con URL propia, hasta 10 secciones personalizables (hero, countdown, itinerario, RSVP, dress code, regalos, galería, música, mensaje, historia de amor), libro de firmas, galería colaborativa y mesa de invitados con QR. Tu invitación vive online hasta 3 días después del evento (puedes descargar firmas y fotos antes).',
   },
   {
     q: '¿Cuánto tarda la entrega?',
-    a: 'Plan Lanzamiento: 5 días hábiles. Plan Estándar: 3-5 días. Plan Custom: según alcance, mínimo 7-10 días. Si tu boda es urgente, podemos trabajar entrega exprés con costo adicional.',
+    a: 'Plan Lanzamiento: 5 días hábiles. Plan Estándar: 3-5 días hábiles. El plazo empieza a correr desde que nos entregas toda la información (nombres, fecha, fotos, textos). Si tu evento es urgente, podemos trabajar entrega exprés con costo adicional.',
   },
   {
     q: '¿Puedo pedir cambios después de verla?',
-    a: 'Sí. Plan Lanzamiento incluye 2 revisiones. Plan Estándar incluye revisiones ilimitadas hasta tu aprobación. Cambios estructurales mayores pueden tener costo según alcance.',
+    a: 'Sí. Plan Lanzamiento incluye 2 revisiones. Plan Estándar incluye revisiones ilimitadas hasta tu aprobación. Cambios estructurales mayores que impliquen rediseño completo pueden cotizarse por separado.',
   },
   {
     q: '¿Qué pasa con mis fotos y datos?',
-    a: 'Las fotos se guardan en almacenamiento privado seguro (Vercel Blob). Nunca se comparten ni se usan sin tu permiso. Los datos de tus invitados (firmas, RSVPs) solo tú los puedes ver desde el panel.',
+    a: 'Las fotos se guardan en almacenamiento privado seguro (Vercel Blob). Nunca se comparten ni se usan sin tu permiso. Los datos de tus invitados (firmas, RSVPs) solo tú los puedes ver desde el panel admin. Consulta el Aviso de Privacidad para detalles.',
   },
   {
     q: '¿Funciona en WhatsApp?',
-    a: 'Sí. Está pensada específicamente para abrir desde WhatsApp. Carga rápido, se ve perfecta en iPhone y Android, y se comparte con un tap. Probado en el navegador in-app de WhatsApp.',
+    a: 'Sí. Está pensada específicamente para abrir desde WhatsApp. Carga rápido, se ve perfecta en iPhone y Android, y se comparte con un tap. Probada en el navegador in-app de WhatsApp.',
   },
   {
-    q: '¿Puedo tener un dominio propio?',
-    a: 'En Plan Lanzamiento y Estándar usamos subdominio bodas.templateguy.mx/tu-nombre. Plan Custom incluye dominio propio (ej. ana-y-pedro.com). También podemos conectar un dominio que ya tengas.',
+    q: '¿Qué pasa 3 días después del evento?',
+    a: 'La invitación se elimina permanentemente — con todas sus firmas, fotos y datos de invitados. Antes de ese momento te enviamos un enlace para que descargues en PDF el libro de firmas y un ZIP con todas las fotos subidas por los invitados. Es responsabilidad tuya hacer la descarga a tiempo. Esta política mantiene costos bajos y protege la privacidad de los invitados a largo plazo.',
   },
   {
-    q: '¿Hacen invitaciones de XV años?',
-    a: 'Sí. Tenemos modo específico XV años con secciones nuevas: padrinos, corte de honor, paletas rosa/violeta/coquette/y2k. El precio es el mismo que el plan estándar.',
+    q: '¿Hacen invitaciones de XV años y fiestas infantiles?',
+    a: 'Sí. Tenemos modo específico de XV años con secciones nuevas (padrinos, corte de honor) y paletas rosa, violeta, coquette y Y2K. Las fiestas infantiles están próximamente. El precio es el mismo que la invitación de boda.',
+  },
+  {
+    q: '¿Dan factura?',
+    a: 'Actualmente operamos como persona física y no emitimos CFDI (factura fiscal). Los pagos se reciben vía transferencia o depósito bancario. Si tu empresa requiere factura obligatoriamente, avísanos antes de contratar para evaluar alternativas.',
   },
   {
     q: '¿Qué pasa si cancelo?',
-    a: 'Si cancelas antes de que empecemos a diseñar, reembolso completo. Si ya empezamos, reembolso del 50%. Una vez entregada no hay reembolso pero puedes seguir usándola sin problema.',
+    a: 'Si cancelas antes de que empecemos a diseñar y dentro de las 72 horas posteriores al pago, reembolso completo del 100%. Si ya empezamos el trabajo, reembolso del 50%. Una vez entregada la invitación no hay reembolso.',
+  },
+  {
+    q: '¿Usan mis invitaciones como ejemplo público?',
+    a: 'Solo si tú lo autorizas. Al contratar te preguntamos si estás de acuerdo en que la invitación aparezca en nuestro portafolio público (templateguy.mx). Si prefieres privacidad, marcas que no y respetamos esa decisión. Puedes cambiar de opinión escribiendo a binomecreative@gmail.com.',
   },
 ]
 

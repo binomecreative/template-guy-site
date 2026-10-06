@@ -104,8 +104,8 @@ export default function Footer() {
             © {new Date().getFullYear()} Template Guy · de Grupo Binôme Studio
           </p>
           <div className="flex items-center gap-5">
-            <a href="#" className="hover:text-[#0A0A0A]">Términos</a>
-            <a href="#" className="hover:text-[#0A0A0A]">Privacidad</a>
+            <a href="/terminos" className="hover:text-[#0A0A0A]">Términos</a>
+            <a href="/privacidad" className="hover:text-[#0A0A0A]">Privacidad</a>
           </div>
         </div>
       </div>

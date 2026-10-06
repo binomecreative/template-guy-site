@@ -12,10 +12,10 @@ const TIERS = [
       'Hasta 10 secciones personalizables',
       '6 paletas de color',
       'Libro de firmas con moderación',
-      'Galería colaborativa con QR',
-      'Reproductor de música',
+      'Galería colaborativa con QR en mesa',
+      'Reproductor de música (Spotify/MP3)',
       '2 revisiones incluidas',
-      'Entrega en 5 días',
+      'Entrega en 5 días hábiles',
     ],
     cta: 'Reservar lugar',
     highlighted: false,
@@ -29,32 +29,13 @@ const TIERS = [
     features: [
       'Todo lo del plan Lanzamiento',
       'Secciones ilimitadas',
-      'Soporte prioritario WhatsApp',
-      'Revisiones ilimitadas',
-      'Tipografía custom',
-      'Mesa de invitados con QR',
-      'Entrega en 3-5 días',
+      'Soporte prioritario por WhatsApp',
+      'Revisiones ilimitadas hasta aprobación',
+      'Prioridad en el calendario',
+      'Entrega en 3-5 días hábiles',
     ],
     cta: 'Empezar ahora',
     highlighted: true,
-  },
-  {
-    name: 'Custom',
-    priceLabel: 'Cotizar',
-    priceSub: 'Desde $2,500 MXN',
-    tag: 'XV años · Eventos',
-    tagColor: 'bg-neutral-500',
-    features: [
-      'Diseño 100% a medida',
-      'Variantes exclusivas por boda',
-      'Secciones específicas XV años',
-      'Dominio propio incluido',
-      'Hosting por 1 año',
-      'Analytics de invitados',
-      'Entrega personalizada',
-    ],
-    cta: 'Agendar llamada',
-    highlighted: false,
   },
 ]
 
@@ -75,11 +56,11 @@ export default function Pricing() {
             Precio claro. <span className="italic">Sin trampas.</span>
           </h2>
           <p className="mt-6 text-base text-neutral-600 max-w-xl mx-auto">
-            Un pago único. Tu invitación online para siempre. Nada de suscripciones mensuales ni letras chiquitas.
+            Un pago único. Tu invitación online hasta 3 días después del evento. Nada de suscripciones mensuales ni letras chiquitas.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
           {TIERS.map((t) => (
             <div
               key={t.name}
@@ -142,6 +123,19 @@ export default function Pricing() {
             </div>
           ))}
         </div>
+
+        {/* Disclaimer legal de aceptación */}
+        <p className="mt-10 text-center text-xs text-neutral-500 max-w-xl mx-auto leading-relaxed">
+          Al confirmar el pago aceptas los{' '}
+          <a href="/terminos" className="underline hover:text-[#0A0A0A]">
+            Términos y Condiciones
+          </a>{' '}
+          y el{' '}
+          <a href="/privacidad" className="underline hover:text-[#0A0A0A]">
+            Aviso de Privacidad
+          </a>
+          . Operación como persona física — no se emite CFDI.
+        </p>
       </div>
     </section>
   )
